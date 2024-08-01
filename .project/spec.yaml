@@ -61,7 +61,7 @@ environment:
         --bind_all
       health_check_command: '[ \$(curl -o /dev/null -s -w ''%{http_code}'' http://localhost:\$TENSORBOARD_PORT\$PROXY_PREFIX/)
         == ''200'' ]'
-      stop_command: pkill tensorboard
+      stop_command: ""
       user_msg: ""
       logfile_path: ""
       timeout_seconds: 60
